@@ -1,0 +1,29 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <title>ng stuff</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="genericService.js"></script>
+</head>
+<body ng-controller="MainCtrl">
+<a href="#/">Index</a> |<a href="#/other">Other</a>
+
+<br>
+<br>
+{{test}}
+
+<ng-view></ng-view>
+
+<script type="text/ng-template" id="tplIndex.html">
+    Index Page
+</script>
+
+<script type="text/ng-template" id="tplOther.html">
+    Other Page that has other stuff!
+</script>
+</body>
+</html>
