@@ -8,10 +8,10 @@ app.config(function ($routeProvider) {
 });
 
 app.controller('MainCtrl', function ($scope,myService) {
-       $scope.name = 'World';
+    $scope.name = 'World';
 
-    var mockEnabled=true;
-    $scope.test = myService.testHttpGetResult(mockEnabled);
+    var mockEnabled=false;
+    $scope.test = myService.GetDataFromService(mockEnabled);
 });
 
 
